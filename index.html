@@ -19,9 +19,6 @@
     <link rel="stylesheet" href="style/header/style.css">
     <!--  -->
 
-    <!-- for carousel2 -->
-    
-    <!--  -->
 
 </head>
 <body>
@@ -77,8 +74,8 @@
                         <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
       
                         <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                          <li class="active"><a href="#home-section" class="nav-link">Home</a></li>
-                          <li><a href="#classes-section" class="nav-link">Profile</a></li>
+                          <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                          <li><a href="profile.html" class="nav-link">Profile</a></li>
                           <!-- <li class="has-children">
                             <a href="#" class="nav-link">Pages</a>
                             <ul class="dropdown arrow-top">
@@ -95,8 +92,8 @@
                               </li>
                             </ul>
                           </li> -->
-                          <li><a href="#about-section" class="nav-link">Contact Us</a></li>
-                          <li><a href="#events-section" class="nav-link">Blog</a></li>
+                          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                          <li><a href="#" class="nav-link">Blog</a></li>
                         </ul>
                       </div>
                     </nav>
@@ -243,7 +240,7 @@
           </div>
     </section>
 
-    <section>
+    <section id="departments">
         <div class="se1">
             <div class="se21">
                 <h5>OUR DEPARTMENTS</h5>
@@ -255,55 +252,55 @@
             <div class="se22">
                 <div class="se31">
                     <div class="se32">
-                        <img src="insurance-icon.png" alt="Insurance Tax">
+                        <img src="./assets/emergency.png" alt="Insurance Tax">
                     </div>
                     <div class="se33">
-                        <h3>Insurance Tax</h3>
+                        <h3>Emergency</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
                 </div> 
                 <div class="se31">
                     <div class="se32">
-                        <img src="insurance-icon.png" alt="Insurance Tax">
+                        <img src="./assets/radiology.png" alt="Insurance Tax">
                     </div>
                     <div class="se33">
-                        <h3>Insurance Tax</h3>
+                        <h3>Radiology</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
                 </div> 
                 <div class="se31">
                     <div class="se32">
-                        <img src="insurance-icon.png" alt="Insurance Tax">
+                        <img src="./assets/cardiology.png" alt="Insurance Tax">
                     </div>
                     <div class="se33">
-                        <h3>Insurance Tax</h3>
+                        <h3>Cardiology</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
                 </div> 
                 <div class="se31">
                     <div class="se32">
-                        <img src="insurance-icon.png" alt="Insurance Tax">
+                        <img src="./assets/pharmacy.png" alt="Insurance Tax">
                     </div>
                     <div class="se33">
-                        <h3>Insurance Tax</h3>
+                        <h3>Pharmacy</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
                 </div> 
                 <div class="se31">
                     <div class="se32">
-                        <img src="insurance-icon.png" alt="Insurance Tax">
+                        <img src="./assets/gynaecology.png" alt="Insurance Tax">
                     </div>
                     <div class="se33">
-                        <h3>Insurance Tax</h3>
+                        <h3>Gynaeocologist</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
                 </div> 
                 <div class="se31">
                     <div class="se32">
-                        <img src="insurance-icon.png" alt="Insurance Tax">
+                        <img src="./assets/nursing.png" alt="Insurance Tax">
                     </div>
                     <div class="se33">
-                        <h3>Insurance Tax</h3>
+                        <h3>Nursing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
                 </div> 
@@ -354,7 +351,6 @@
                 </div>
                 <div class="slideshow-container3">
                   <div class="mySlides3 fade3">
-                  <div class="numbertext3">1 / 3</div>
                  
                   <div class="tm31">
                     <div class="tm32">
@@ -377,11 +373,9 @@
                     </div>
                   </div>
 
-                  <div class="text3">Caption Text</div>
                   </div>
                   
                   <div class="mySlides3 fade3">
-                  <div class="numbertext3">2 / 3</div>
                   
                   <div class="tm31">
                     <div class="tm32">
@@ -404,11 +398,9 @@
                     </div>
                   </div>
 
-                  <div class="text3">Caption Two</div>
                   </div>
                   
                   <div class="mySlides3 fade3">
-                  <div class="numbertext3">3 / 3</div>
 
                     <div class="tm31">
                       <div class="tm32">
@@ -431,7 +423,6 @@
                       </div>
                     </div>
 
-                    <div class="text3">Caption Three</div>
                   </div>
 
                   <div style="text-align:center">
@@ -444,7 +435,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="milestones">
         <div class="plxx1 background-tint" style="background-image: url(./assets/parallaxbg5.jpg)">
             <div class="se21">
                 <h5>MILESTONES</h5>
@@ -930,7 +921,7 @@ const carousel = new CardCarousel(cardsContainer)
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 5000); // Change image every 2 seconds
         }
-        </script>
+    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
