@@ -702,6 +702,7 @@ img {vertical-align: middle;}
   width: 50%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .ft23 a i{
   font-size: 20px;
