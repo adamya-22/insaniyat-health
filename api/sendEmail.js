@@ -1,6 +1,6 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
-export default async function (req, res) {
+export default async function handler(req, res) {
   const { name, email, subject, message } = req.body;
 
   // Create a Nodemailer transporter
@@ -21,9 +21,10 @@ export default async function (req, res) {
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     });
 
+    console.log('Email sent successfully!');
     res.status(200).json({ message: 'Email sent successfully!' });
   } catch (error) {
-    console.log('Error sending email:', error);
-    res.status(500).json({ message: 'Failed to send email' });
+    console.error('Error sending email:', error.message);
+    res.status(500).json({ message: 'Failed to send email. Please try again later.' });
   }
 }
