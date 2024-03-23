@@ -319,9 +319,13 @@
     overflow: hidden;
     transition: background-color 1s ease;
 }
-.se31::hover, .se33 p{
-  color: white;
 
+.se31::hover, .se33 p {
+  color: white;
+}
+
+.se31 p {
+  transition: color 1s ease; /* Add transition for color change */
 }
 .se31::before {
   content: "";
@@ -340,6 +344,9 @@
 
 .se31:hover {
   background-color: #adbc9f85; /* Change the background color when hovered */
+}
+.se31:hover p {
+  color: white; /* Change the color of <p> when hovered */
 }
 .se32, .se33{
   position: relative;
@@ -724,3 +731,108 @@ img {vertical-align: middle;}
   color: #fff;  
 }
 
+/* profile page */
+.prof-s1 h2{
+  font-size: 45px;
+  font-weight: bolder;
+  color: #fff;
+}
+.prof-s1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prof-s21{
+  width: 70% !important;
+  display: flex;
+}
+.prof-s22 img{
+  height: 120px ;
+  width: 120px ;
+}
+.prof-s23{
+  margin-left: 20px;
+}
+
+/* contact */
+.con-s1{
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.con-s12 h4{
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.con-s12{
+  height: fit-content;
+  padding: 35px 45px;
+  width: 350px;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  position: relative;
+  bottom: 70px;
+  background-color: #fff;
+  min-width: 30%;
+}
+.con-s12 form button{
+  padding: 15px 15px;
+  margin-top: 40px;
+  background-color: #ffb400;
+  font-size: large;
+  font-weight: 800;
+  border: 0;
+}
+
+.con-s12 form input,textarea{
+  margin-bottom: 20px;
+  border: 0;
+  padding: 7px 15px;
+  background-color: rgba(128, 128, 128, 0.182);
+}
+
+.con-s12 form{
+  display: flex;
+    flex-direction: column;
+}
+
+.con-s13{
+  padding: 35px;
+  min-width: 60%;
+}
+.con-s14{
+  text-align: center;
+}
+
+.con-s14 p i{
+  color: #ffb400  ;
+}
+.con-s12 h4{
+  font-weight: 800;
+  color: #80837e;
+}
+@media only screen and (max-width: 800px){
+  .prof-s21{
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  .prof-s22{
+    margin-bottom: 20px;
+  }
+  .prof-s23{
+    margin: 0;
+    text-align: center;
+  }
+  .con-s13{
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  .con-s13 .se21 h2{
+    font-size: 30px;
+  }
+}
